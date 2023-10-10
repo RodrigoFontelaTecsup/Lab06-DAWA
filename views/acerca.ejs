@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina acerca de nosotros</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('navbar.ejs') %>
+    <div class="container">
+      <div>
+        <h1 class="d-flex justify-content-center mt-4 mb-4">
+          Acerca de nosotros
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="<%= imagen %>"
+              class="card-img-top img-fluid"
+              alt="Imagen de Misión"
+              width="300"
+              height="200"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Misión de la empresa</h5>
+              <p class="card-text"><%= mision_empresa %></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="<%= imagen %>"
+              class="card-img-top img-fluid"
+              alt="Imagen de Visión"
+              width="300"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Visión de la empresa</h5>
+              <p class="card-text"><%= vision_empresa %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('footer.ejs') %>
+  </body>
+</html>

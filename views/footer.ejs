@@ -1,0 +1,66 @@
+<footer class="text-center text-lg-start bg-light text-muted mt-auto">
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i><%= nombre_empresa %>
+          </h6>
+          <p><%= lema_empresa %></p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Redes Sociales</h6>
+          <p>
+            <a href="#!" class="text-reset"><%= red_facebook %></a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset"><%= red_twitter %></a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset"><%= red_linkedin %></a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Informacion de la empresa</h6>
+          <p>
+            <i class="fas fa-home me-3">Direccion:</i><%= direccion_empresa %>
+          </p>
+          <p>
+            <i class="fas fa-envelope me-3">Correo electronico:</i>
+            <%= correo_empresa %>
+          </p>
+          <p>
+            <i class="fas fa-phone me-3">Telefono:</i><%= telefono_empresa %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
